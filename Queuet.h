@@ -30,5 +30,4 @@ class Queuet
 }; 
 
 #endif // QUEUET_H
-#include "Queuet.cpp"
 

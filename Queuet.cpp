@@ -2,8 +2,9 @@
 // Queue template class implementation
 
 #include <iostream>
-using namespace std;
+#include "Queuet.h"
 
+using namespace std;
 
 // Constructor with argument, size is nelements, default 128
 template <class Type>

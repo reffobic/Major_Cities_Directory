@@ -2,6 +2,7 @@
 // Stack template class implementation
 
 #include <iostream>
+#include "Stackt.h"
 using namespace std;
 
 

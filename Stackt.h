@@ -5,6 +5,7 @@
 #ifndef STACKT_H           
 #define STACKT_H           
 
+
 template <class Type>
 
 class Stackt
@@ -29,5 +30,4 @@ class Stackt
 }; 
 
 #endif // STACKT_H
-#include "Stackt.cpp"
 

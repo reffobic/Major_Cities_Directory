@@ -5,6 +5,7 @@
 #include <iomanip>
 #include "Stackt.h"
 #include "Queuet.h"
+#include "BinaryTree.h"
 using namespace std;
 
 // Member functions ...
@@ -269,7 +270,10 @@ void binaryTree<keyType, dataType>::remove (const keyType &k)
 // or is NULL if not found, and parent points to 
 // its parent. Used by remove
 template <class keyType, class dataType>
-void binaryTree<keyType, dataType>::parentSearch (const keyType &k, bool &found, NodePointer &locptr, NodePointer &parent) const
+void binaryTree<keyType, dataType>::parentSearch (const keyType &k, 
+											bool &found, 
+											NodePointer &locptr,
+				   							NodePointer &parent) const
 {
 	locptr = root;  parent = NULL; found = false;
 	while (!found && locptr != NULL)

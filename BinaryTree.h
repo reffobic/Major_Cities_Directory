@@ -84,12 +84,10 @@ class binaryTree
 	  void graph2 (int ,NodePointer ) const;
 
 	  // LOCATE A NODE CONTAINING ELEMENT AND ITS PARENT
-      void parentSearch ( const keyType &k, bool &found, 
-							NodePointer &locptr, NodePointer &parent) const;
+      void parentSearch ( const keyType &k, bool &found, NodePointer &locptr, NodePointer &parent) const;
 
 
 }; 
 
 #endif // BIN_TREE_H
-#include "binaryTree.cpp"
 
