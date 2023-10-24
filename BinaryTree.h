@@ -50,7 +50,7 @@ class binaryTree
 	  // REMOVE AN ELEMENT FROM THE TREE
       void remove (const keyType &);
 
-        void saveFile(const std::string& filename);
+      void saveFile(const std::string& filename);
    private:
       // Node Class
 	   class treeNode

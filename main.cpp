@@ -163,7 +163,8 @@ int main() {
         }while(c == 'Y' || c=='y');}
 
     // Save the data to a file
-    dictionary.saveFile2(filename);
+    dictionary.saveFile(filename);
+
 
 
     string city1, city2; // Calculate and display the distance between two cities
