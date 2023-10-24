@@ -166,7 +166,6 @@ int main() {
     dictionary.saveFile(filename);
 
 
-
     string city1, city2; // Calculate and display the distance between two cities
     do{
         cout << "Enter two cities to find the distance between them: ";

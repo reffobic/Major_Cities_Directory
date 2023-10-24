@@ -6,6 +6,7 @@
 #include "Stackt.h"
 #include "Queuet.h"
 #include "BinaryTree.h"
+#include <fstream>
 using namespace std;
 
 // Member functions ...
@@ -289,3 +290,20 @@ void binaryTree<keyType, dataType>::parentSearch (const keyType &k,
 		else found = true; // el found
 	}// end while
 } // end of private parentSearch
+
+template <typename K, typename V>
+void binaryTree<K, V>::saveFile(const std::string& filename) {
+    ofstream file(filename);
+    if (!file.is_open()) {
+        cerr << "Error opening file: " << filename << std::endl;
+        return;
+    }
+
+    // Write data to file in desired format
+    // For example, in CSV format:
+    for (const auto& node : *this) {
+        file << node.key << "," << node.value.country << "," << node.value.lat << "," << node.value.lon << "\n";
+    }
+
+    file.close();
+}
